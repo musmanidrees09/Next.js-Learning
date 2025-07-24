@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Blog() {
   // example posts
@@ -9,6 +10,14 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-blue-50">
+      <Head>
+        <title>Blog | My Next.js App</title>
+        <meta
+          name="description"
+          content="Read our latest posts and articles."
+        />
+      </Head>
+
       <main className="p-8">
         <h1 className="text-3xl mb-4 text-blue-800">Blog</h1>
         <ul className="list-disc pl-6">
